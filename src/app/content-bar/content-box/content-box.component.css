@@ -52,6 +52,10 @@
         margin:auto;
         width: 100%;
     }
+    .item-box{
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
     .heading{
         margin: 0rem;
         padding: 0rem;
