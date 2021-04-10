@@ -38,6 +38,7 @@ export class ContentBoxComponent implements OnInit {
           else{
             this.totalRows=parseInt(res.pages);
             this.calculateTotalNumberOfPages();
+            this.assignPageVariables();
             this.selectedItems=res.moogles;
           }
         }
@@ -48,14 +49,17 @@ export class ContentBoxComponent implements OnInit {
         if(res){
           this.totalRows=parseInt(res.pages);
           this.calculateTotalNumberOfPages();
+          this.assignPageVariables();
           this.selectedItems=res.moogles;
         }
       })
     }
+  }
+  assignPageVariables(){
     if(this.pageNumber==this.totalPages){
+      console.log("page Number : ",this.pageNumber);
       this.boolLastPage=true;
     }
-  
   }
   calculateTotalNumberOfPages(){
     let pages1=Math.floor(this.totalRows/10);

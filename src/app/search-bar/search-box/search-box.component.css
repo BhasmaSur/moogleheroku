@@ -53,3 +53,11 @@ input:focus {
 :host ::ng-deep .highlight{
     background-color: #F2E366;
   }
+
+  @media (max-width:420px){
+    .box-outer{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+  }
